@@ -20,11 +20,11 @@ public class VerifyByInstanceDemo {
 
         System.out.println("=== VerifyByInstanceDemo ===");
         System.out.println("Note: verify(Object) uses instance.getClass() only (instance is not executed).");
-        
+
         System.out.println("Linearizable: " + result.isLinearizable());
         System.out.println("Producer time: " + result.getProdExecutionTime().toMillis() + " ms");
         System.out.println("Verifier time: " + result.getVerifierExecutionTime().toMillis() + " ms");
         System.out.println("Total time: " + result.getExecutionTime().toMillis() + " ms");
-        
+
     }
 }

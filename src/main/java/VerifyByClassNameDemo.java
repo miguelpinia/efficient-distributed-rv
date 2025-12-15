@@ -21,6 +21,6 @@ public class VerifyByClassNameDemo {
         System.out.println("Producer time: " + result.getProdExecutionTime().toMillis() + " ms");
         System.out.println("Verifier time: " + result.getVerifierExecutionTime().toMillis() + " ms");
         System.out.println("Total time: " + result.getExecutionTime().toMillis() + " ms");
-    
+
     }
 }

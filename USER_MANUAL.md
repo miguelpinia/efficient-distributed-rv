@@ -1,7 +1,7 @@
 # User Manual - Efficient Distributed Runtime Verification
 
-**Version:** 1.0  
-**Date:** December 2025  
+**Version:** 1.0
+**Date:** December 2025
 **For:** RV 2024 Artifact Submission
 
 ---
@@ -40,7 +40,7 @@ Just-In-Time (JIT) backtracking algorithm.
 
 - **Two snapshot strategies** for event collection: GAI (Fetch-And-Increment) and RAW (Read-After-Write)
 - **JIT-based verification** using undo operations for efficient backtracking
-- **Support for Java concurrent collections** 
+- **Support for Java concurrent collections**
 - **Clean fluent API** for easy integration
 - **Extensible architecture** for adding new algorithms
 
@@ -67,7 +67,7 @@ sufficient to detect linearizability violations at runtime.
 
 ```bash
 # Clone repository
-git clone https://github.com/miguelpinia/efficient-distributed-rv.git
+git clone https://github.com/PRISM-Concurrent/efficient-distributed-rv.git
 cd efficient-distributed-rv
 
 # Build
@@ -121,9 +121,9 @@ public class HighLevelExample {
 
 The framework follows a classical three-layer structure:
 
-1. Instrumentation – obtain the current execution  
-2. Monitoring – decide correctness of the execution  
-3. Specification – define correct sequential behavior  
+1. Instrumentation – obtain the current execution
+2. Monitoring – decide correctness of the execution
+3. Specification – define correct sequential behavior
 
 ---
 
@@ -191,7 +191,7 @@ Result object with verification details.
 - `isCorrect()` / `isLinearizable()` - Verification result
 - `getExecutionTime()` - Total duration of verification
 - `getProdExecutionTime()` - Duration of producers
-- `getVerifierExecutionTime()` - Duratioin of 
+- `getVerifierExecutionTime()` - Duratioin of
 - `getStatistics()` - Execution statistics
 
 
@@ -214,7 +214,7 @@ static AlgorithmInfo getInfo(String name)
 ### Example 1: Verify ConcurrentHashMap
 
 ```java
-DistAlgorithm algorithm = new A("java.util.concurrent.ConcurrentHashMap", 
+DistAlgorithm algorithm = new A("java.util.concurrent.ConcurrentHashMap",
                                  "put", "get", "remove");
 Executioner exec = new Executioner(4, 100, algorithm, "map");
 exec.taskProducers();

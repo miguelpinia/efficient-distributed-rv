@@ -11,15 +11,15 @@ For API semantics and configuration options, see:
 
 ## Contents
 
-1. Minimal one-liner verification  
-2. Verify a queue with explicit methods  
-3. Using different snapshot strategies  
-4. Workload-based verification  
-5. Read-heavy vs write-heavy workloads  
-6. Deterministic verification with schedules  
-7. Detecting a non-linearizable implementation  
-8. Low-level execution with `Executioner`  
-9. High-performance batch example  
+1. Minimal one-liner verification
+2. Verify a queue with explicit methods
+3. Using different snapshot strategies
+4. Workload-based verification
+5. Read-heavy vs write-heavy workloads
+6. Deterministic verification with schedules
+7. Detecting a non-linearizable implementation
+8. Low-level execution with `Executioner`
+9. High-performance batch example
 
 ---
 
@@ -140,7 +140,7 @@ VerificationResult result = VerificationFramework
 
 Write-heavy deque
 
-```java 
+```java
 WorkloadPattern writeHeavy =
     WorkloadPattern.writeHeavy(200, 4, 0.8);
 

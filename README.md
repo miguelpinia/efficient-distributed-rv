@@ -6,7 +6,7 @@ A linearizability checker for concurrent data structures that uses non-lineariza
 [![Tests](https://img.shields.io/badge/tests-78%20passing-brightgreen)]()
 [![Java](https://img.shields.io/badge/Java-21-blue)]()
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)]()
-[![GitHub](https://img.shields.io/badge/GitHub-public-green)](https://github.com/miguelpinia/efficient-distributed-rv)
+[![GitHub](https://img.shields.io/badge/GitHub-public-green)](https://github.com/PRISM-Concurrent/efficient-distributed-rv)
 
 ---
 
@@ -191,19 +191,18 @@ Apache License 2.0 - See LICENSE file for details
 If you use this tool in your research, please cite:
 
 ```bibtex
-@InProceedings{10.1007/978-3-031-74234-7_17,
-author="Rodr{\'i}guez, Gilde Valeria
-and Casta{\~{n}}eda, Armando",
-editor="{\'A}brah{\'a}m, Erika
-and Abbas, Houssam",
-title="Towards Efficient Runtime Verified Linearizable Algorithms",
-booktitle="Runtime Verification",
-year="2025",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="262--281",
-abstract="An asynchronous, fault-tolerant, sound and complete algorithm for runtime verification of linearizability of concurrent algorithms was proposed in [7]. This solution relies on the snapshot abstraction in distributed computing. The fastest known snapshot algorithms use complex constructions, hard to implement, and the simplest ones provide large step complexity bounds or only weak termination guarantees. Thus, the snapshot-based verification algorithm is not completely satisfactory. In this paper, we propose an alternative solution, based on the collect abstraction, which can be optimally implemented in a simple manner. As a final result, we offer a simple and generic methodology that takes any presumably linearizable algorithm and produces a lightweight runtime verified linearizable version of it.",
-isbn="978-3-031-74234-7"
+@InProceedings{
+    10.1007/978-3-031-74234-7_17,
+    author="Rodr{\'i}guez, Gilde Valeria and Casta{\~{n}}eda, Armando",
+    editor="{\'A}brah{\'a}m, Erika and Abbas, Houssam",
+    title="Towards Efficient Runtime Verified Linearizable Algorithms",
+    booktitle="Runtime Verification",
+    year="2025",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="262--281",
+    abstract="An asynchronous, fault-tolerant, sound and complete algorithm for runtime verification of linearizability of concurrent algorithms was proposed in [7]. This solution relies on the snapshot abstraction in distributed computing. The fastest known snapshot algorithms use complex constructions, hard to implement, and the simplest ones provide large step complexity bounds or only weak termination guarantees. Thus, the snapshot-based verification algorithm is not completely satisfactory. In this paper, we propose an alternative solution, based on the collect abstraction, which can be optimally implemented in a simple manner. As a final result, we offer a simple and generic methodology that takes any presumably linearizable algorithm and produces a lightweight runtime verified linearizable version of it.",
+    isbn="978-3-031-74234-7"
 }
 ```
 
@@ -211,10 +210,10 @@ isbn="978-3-031-74234-7"
 
 ## Contact
 
-- **Issues:** [GitHub Issues](repository-url/issues)
-- **Maintainers:**  
-  - **Miguel A. Piña** — `miguelpinia1@gmail.com`
-  - **Gilde Valeria Rodríguez** — `gildevroji@gmail.com`  
+- **Issues:** [GitHub Issues](https://github.com/gilde-valeria/rv_collects/issues) - We're following an internal development flow, where all changes are made and tested in Gilde's repository and then in a public repository.
+- **Maintainers:**
+  - **Miguel Piña** — `miguelpinia1@gmail.com`
+  - **Gilde Valeria Rodríguez** — `gildevroji@gmail.com`
 
 
 ---

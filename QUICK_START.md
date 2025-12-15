@@ -32,17 +32,17 @@ using the same verification pipeline.
 
 Columns:
 
-- **Producers (ms)**  
+- **Producers (ms)**
   Time spent executing operations and recording events
   (instrumentation + snapshot collection).
 
-- **Verifier (ms)**  
+- **Verifier (ms)**
   Time spent by the JIT linearizability checker.
 
-- **Total (ms)**  
+- **Total (ms)**
   End-to-end execution time (Producers + Verifier).
 
-- **Result**  
+- **Result**
   Linearizability outcome reported by the checker.
 
 ```text
@@ -91,7 +91,7 @@ Each row corresponds to the same object, the same number of threads,
 and the same number of operations, but with a different workload pattern.
 
 Columns:
- 
+
 - Producers: Time spent executing operations and recording events (instrumentation + snapshot).
 - Verifier: Time spent by the JIT linearizability checker.
 - Total: End-to-end verification time.
@@ -136,7 +136,7 @@ that the framework is robust across different execution shapes.
 ```bash
 # Batch example: All Java concurrent algorithms
 mvn clean compile
-./run-example.sh BatchExecution 
+./run-example.sh BatchExecution
 ```
 
 All verified as **LINEARIZABLE** with JitLin checker:
@@ -177,20 +177,20 @@ Note:
 - Different algorithms lead to different state spaces for the checker, so verification time varies significantly.
 
 
-### Timeout 
+### Timeout
 
 Demonstrates withTimeout(...) safety
 
 ```bash
 # Batch example: All Java concurrent algorithms
 mvn clean compile
-./run-example.sh TimeoutDemo 
+./run-example.sh TimeoutDemo
 ```
 
 ### Validation (Non-linearizable Test)
 
 ```bash
-# 
+#
 mvn clean compile
 ./run-example.sh NonLinearizableTest
 ```
